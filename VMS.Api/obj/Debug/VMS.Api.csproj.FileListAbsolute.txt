@@ -1,0 +1,46 @@
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\VMS.Api.dll.config
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\VMS.Api.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\VMS.Api.pdb
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\Newtonsoft.Json.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\System.Net.Http.Formatting.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\System.Web.Http.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\System.Web.Http.WebHost.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\Newtonsoft.Json.xml
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\System.Net.Http.Formatting.xml
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\System.Web.Http.xml
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\System.Web.Http.WebHost.xml
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\obj\Debug\VMS.Api.csprojResolveAssemblyReference.cache
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\obj\Debug\VMS.Api.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\obj\Debug\VMS.Api.pdb
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\EntityFramework.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\EntityFramework.SqlServer.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\System.Web.Cors.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\System.Web.Http.Cors.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\VMS.EF.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\VMS.EF.pdb
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\EntityFramework.xml
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\EntityFramework.SqlServer.xml
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Api\bin\System.Web.Http.Cors.xml
+H:\personal\VMS\VMS.Api\bin\VMS.Api.dll.config
+H:\personal\VMS\VMS.Api\bin\VMS.Api.dll
+H:\personal\VMS\VMS.Api\bin\VMS.Api.pdb
+H:\personal\VMS\VMS.Api\bin\EntityFramework.dll
+H:\personal\VMS\VMS.Api\bin\EntityFramework.SqlServer.dll
+H:\personal\VMS\VMS.Api\bin\Newtonsoft.Json.dll
+H:\personal\VMS\VMS.Api\bin\System.Net.Http.Formatting.dll
+H:\personal\VMS\VMS.Api\bin\System.Web.Cors.dll
+H:\personal\VMS\VMS.Api\bin\System.Web.Http.Cors.dll
+H:\personal\VMS\VMS.Api\bin\System.Web.Http.dll
+H:\personal\VMS\VMS.Api\bin\System.Web.Http.WebHost.dll
+H:\personal\VMS\VMS.Api\bin\VMS.EF.dll
+H:\personal\VMS\VMS.Api\bin\VMS.EF.pdb
+H:\personal\VMS\VMS.Api\bin\EntityFramework.xml
+H:\personal\VMS\VMS.Api\bin\EntityFramework.SqlServer.xml
+H:\personal\VMS\VMS.Api\bin\System.Net.Http.Formatting.xml
+H:\personal\VMS\VMS.Api\bin\System.Web.Http.xml
+H:\personal\VMS\VMS.Api\bin\System.Web.Http.Cors.xml
+H:\personal\VMS\VMS.Api\bin\Newtonsoft.Json.xml
+H:\personal\VMS\VMS.Api\bin\System.Web.Http.WebHost.xml
+H:\personal\VMS\VMS.Api\obj\Debug\VMS.Api.csprojResolveAssemblyReference.cache
+H:\personal\VMS\VMS.Api\obj\Debug\VMS.Api.dll
+H:\personal\VMS\VMS.Api\obj\Debug\VMS.Api.pdb

@@ -1,0 +1,19 @@
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Web\bin\VMS.Web.dll.config
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Web\bin\VMS.Web.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Web\bin\VMS.Web.pdb
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Web\obj\Debug\VMS.Web.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.Web\obj\Debug\VMS.Web.pdb
+H:\personal\VMS\VMS.Web\bin\VMS.Web.dll.config
+H:\personal\VMS\VMS.Web\bin\VMS.Web.dll
+H:\personal\VMS\VMS.Web\bin\VMS.Web.pdb
+H:\personal\VMS\VMS.Web\obj\Debug\VMS.Web.csprojResolveAssemblyReference.cache
+H:\personal\VMS\VMS.Web\obj\Debug\VMS.Web.dll
+H:\personal\VMS\VMS.Web\obj\Debug\VMS.Web.pdb
+H:\personal\VMS\VMS.Web\bin\Newtonsoft.Json.dll
+H:\personal\VMS\VMS.Web\bin\System.Net.Http.Formatting.dll
+H:\personal\VMS\VMS.Web\bin\System.Web.Http.dll
+H:\personal\VMS\VMS.Web\bin\System.Web.Http.WebHost.dll
+H:\personal\VMS\VMS.Web\bin\Newtonsoft.Json.xml
+H:\personal\VMS\VMS.Web\bin\System.Net.Http.Formatting.xml
+H:\personal\VMS\VMS.Web\bin\System.Web.Http.xml
+H:\personal\VMS\VMS.Web\bin\System.Web.Http.WebHost.xml

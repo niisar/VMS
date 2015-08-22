@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html ng-app="taskWebApp" ng-controller="registration.login">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title></title>
+
+
+    <link rel="stylesheet" type="text/css" href="~/Resorces/css/bootstrap/bootstrap.min.css" />
+
+    <script src="~/Resorces/js/demo-rtl.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="~/Resorces/css/libs/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="~/Resorces/css/libs/nanoscroller.css" />
+
+    <link rel="stylesheet" type="text/css" href="~/Resorces/css/compiled/theme_styles.css" />
+
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
+
+    <link type="image/x-icon" href="favicon.png" rel="shortcut icon" />
+    <!--[if lt IE 9]>
+            <script src="~/Resorces/js/html5shiv.js"></script>
+            <script src="~/Resorces/js/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+<body id="login-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="login-box">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <header id="login-header">
+                                <div id="login-logo">
+                                    <img src="~/Resorces/img/logo.png" alt="" />
+                                </div>
+                            </header>
+                            <div id="login-box-inner">
+                                <form role="form" action="registration.html">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input class="form-control" data-ng-model="registration.userName" type="text" placeholder="User Name" required autofocus>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                        <input type="password" class="form-control" placeholder="Enter password" data-ng-model="registration.password" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+                                        <input type="password" class="form-control" placeholder="Re-enter password" data-ng-model="registration.confirmPassword" required>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <button type="button" class="btn btn-success col-xs-12" data-ng-click="signUp()">Register</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12" data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+                                            {{message}}
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/Resorces/js/demo-skin-changer.js"></script>
+    <script src="~/Resorces/js/jquery.js"></script>
+    <script src="~/Resorces/js/bootstrap.js"></script>
+    <script src="~/Resorces/js/jquery.nanoscroller.min.js"></script>
+    <script src="~/Resorces/js/demo.js"></script>
+    <script src="~/Resorces/js/scripts.js"></script>
+
+    <script src="~/App/frameworks/angular.min.js"></script>
+    <script src="~/App/frameworks/angular-route.min.js"></script>
+    <script src="~/App/frameworks/angular-animate.js"></script>
+    <script src="~/App/frameworks/loading-bar.js"></script>
+    <script src="~/App/frameworks/angular-strap.js"></script>
+    <script src="~/App/frameworks/angular-strap.tpl.js"></script>
+    <script src="~/App/frameworks/angular-resource.js"></script>
+    <script src="~/App/frameworks/ngDialog.js"></script>
+    <script src="~/App/frameworks/angular-local-storage.min.js"></script>
+    <script src="~/App/frameworks/uigrid/ui-grid.js"></script>
+
+    <script src="~/App/modules/app.js"></script>
+
+    <script src="~/App/configs/config.js"></script>
+    <script src="~/App/services/authService.js"></script>
+    <script src="~/App/services/authInterceptorService.js"></script>
+    <script src="~/App/services/ngCrud.js"></script>
+    <script src="~/App/services/myResource.js"></script>
+
+    <script src="~/App/controllers/common/registrationController.js"></script>
+
+    
+</body>
+</html>

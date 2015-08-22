@@ -1,0 +1,29 @@
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\bin\Debug\VMS.EF.dll.config
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\bin\Debug\VMS.EF.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\bin\Debug\VMS.EF.pdb
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\bin\Debug\EntityFramework.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\bin\Debug\EntityFramework.xml
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\obj\Debug\VMS.EF.csprojResolveAssemblyReference.cache
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\obj\Debug\VMS.EF.dll
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\obj\Debug\VMS.EF.pdb
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\obj\Debug\VMS.EF.csproj.GenerateResource.Cache
+C:\Users\n\documents\visual studio 2013\Projects\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.initial.resources
+C:\Users\n\Documents\Visual Studio 2013\Projects\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.changedDatatype.resources
+C:\Users\n\Documents\Visual Studio 2013\Projects\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.newtable.resources
+H:\personal\VMS\VMS.EF\bin\Debug\VMS.EF.dll.config
+H:\personal\VMS\VMS.EF\bin\Debug\VMS.EF.dll
+H:\personal\VMS\VMS.EF\bin\Debug\VMS.EF.pdb
+H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.dll
+H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.SqlServer.dll
+H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.xml
+H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.SqlServer.xml
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.csprojResolveAssemblyReference.cache
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.initial.resources
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.changedDatatype.resources
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.newtable.resources
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.csproj.GenerateResource.Cache
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.dll
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.pdb
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.new2.resources
