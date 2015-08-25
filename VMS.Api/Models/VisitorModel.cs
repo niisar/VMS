@@ -24,5 +24,6 @@ namespace VMS.Api.Models
         public string TokenNo { get; set; }
         //public string Status { get; set; }
         public DateTime EntryDate { get; set; }
+
     }
 }

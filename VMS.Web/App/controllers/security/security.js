@@ -78,25 +78,9 @@ app.controller('security.security',
             $scope.VisitorDetails.Building = "";
             $scope.VisitorDetails.MeeTTo = "";
             $scope.VisitorDetails.InTime = "";
+            //$scope.VisitorDetails.Status = "";
         }
         $scope.finishedWizard = function () {
-            //var Visitor = {};
-            //Visitor.Name = $scope.VisitorDetails.Name;
-            //Visitor.Email = $scope.VisitorDetails.Email;
-            //Visitor.Phone = $scope.VisitorDetails.Phone;
-            //Visitor.IdCard = $scope.VisitorDetails.IdCard;
-            //Visitor.Vehicle = $scope.VisitorDetails.Vehicle;
-            //Visitor.VehicleNu = $scope.VisitorDetails.VehicleNu;
-            //Visitor.Color = $scope.VisitorDetails.Color;
-            //Visitor.ParkineZone = $scope.VisitorDetails.ParkineZone;
-            //Visitor.Building = $scope.VisitorDetails.Building;
-            //Visitor.MeeTTo = $scope.VisitorDetails.MeeTTo;
-            //Visitor.InTime = $scope.VisitorDetails.InTime;
-            //Visitor.OutTime = $scope.VisitorDetails.OutTime;
-            //Visitor.TokenNo = $scope.VisitorDetails.TokenNo;
-            //Visitor.Status = $scope.VisitorDetails.Status;
-            //Visitor.EntryDate = today;
-
             $http.post(Settings.apiServiceBaseUri + 'api/Visitors/Post', this.VisitorDetails).then(function (results) {
                 $scope.resetForm();
                 WizardHandler.wizard().goTo(0);

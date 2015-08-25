@@ -37,7 +37,18 @@ namespace VMS.Api.Controllers
                     vstr.EntryDate = DateTime.Now;
                     db.Visitors.Add(vstr);
                     db.SaveChanges();
+
+                    //db.Entry(vstr).GetDatabaseValues();
+
+                    InOuts inout = new InOuts();
+                    inout.VisitorID = vstr.VisitorID;
+                    inout.InTime = entity.InTime;
+                    inout.Status = "Security Checkin";
+                    inout.EntryDate = DateTime.Now;
+                    db.InOuts.Add(inout);
+                    db.SaveChanges();
                 }
+                
                 HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, new { entity });
                 return response;
             }
