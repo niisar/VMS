@@ -1,5 +1,5 @@
 app.controller('security.security',
-    function ($scope, $modal, Settings, $animate, ngCrud, $http, ngDialog, myResource, $timeout) {
+    function ($scope, $modal, Settings, $animate, ngCrud, $http, ngDialog, myResource, $timeout, WizardHandler) {
         $scope.templates =
             [{ name: 'Visitors', url: '/app/views/security/list.html' },
              { name: 'New Visitor', url: '/app/views/security/add.html' }];
@@ -65,6 +65,20 @@ app.controller('security.security',
         //    mm = '0' + mm
         //}
         $scope.VisitorDetails = {};
+        $scope.resetForm = function () {
+            $scope.VisitorDetails.Name = "";
+            $scope.VisitorDetails.Guests = "";
+            $scope.VisitorDetails.Email = "";
+            $scope.VisitorDetails.Phone = "";
+            $scope.VisitorDetails.IdCard = "";
+            $scope.VisitorDetails.Vehicle = "";
+            $scope.VisitorDetails.VehicleNu = "";
+            $scope.VisitorDetails.Color = "";
+            $scope.VisitorDetails.ParkineZone = "";
+            $scope.VisitorDetails.Building = "";
+            $scope.VisitorDetails.MeeTTo = "";
+            $scope.VisitorDetails.InTime = "";
+        }
         $scope.finishedWizard = function () {
             //var Visitor = {};
             //Visitor.Name = $scope.VisitorDetails.Name;
@@ -83,8 +97,9 @@ app.controller('security.security',
             //Visitor.Status = $scope.VisitorDetails.Status;
             //Visitor.EntryDate = today;
 
-            $http.post(Settings.apiServiceBaseUri + 'api/Visitors/Post', $scope.VisitorDetails).then(function (results) {
-                
+            $http.post(Settings.apiServiceBaseUri + 'api/Visitors/Post', this.VisitorDetails).then(function (results) {
+                $scope.resetForm();
+                WizardHandler.wizard().goTo(0);
             });
             //$http.get(Settings.apiServiceBaseUri + 'api/Visitors/Get').then(function (results) {
 

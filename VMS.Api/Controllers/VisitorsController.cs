@@ -23,6 +23,7 @@ namespace VMS.Api.Controllers
                 {
                     Visitors vstr = new Visitors();
                     vstr.Name = entity.Name;
+                    vstr.Guests = entity.Guests;
                     vstr.Email = entity.Email;
                     vstr.Phone = entity.Phone;
                     vstr.IdCard = entity.IdCard;
