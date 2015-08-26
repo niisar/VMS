@@ -69,6 +69,10 @@
     <Compile Include="Migrations\201508241118455_new_field_added_to_visitors.Designer.cs">
       <DependentUpon>201508241118455_new_field_added_to_visitors.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508260655583_added new field VisitorPic to visitor.cs" />
+    <Compile Include="Migrations\201508260655583_added new field VisitorPic to visitor.Designer.cs">
+      <DependentUpon>201508260655583_added new field VisitorPic to visitor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="vmsDBContext.cs" />
@@ -92,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508241118455_new_field_added_to_visitors.resx">
       <DependentUpon>201508241118455_new_field_added_to_visitors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508260655583_added new field VisitorPic to visitor.resx">
+      <DependentUpon>201508260655583_added new field VisitorPic to visitor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

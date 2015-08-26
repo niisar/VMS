@@ -14,7 +14,6 @@ namespace VMS.EF.Entitities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int VisitorID { get; set; }
         public string Name { get; set; }
-        public string Guests { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
         public string IdCard { get; set; }
@@ -26,5 +25,8 @@ namespace VMS.EF.Entitities
         public string MeeTTo { get; set; }
         public string TokenNo { get; set; }
         public DateTime EntryDate { get; set; }
+        public string Guests { get; set; }
+        public string VisitorPic { get; set; }
+
     }
 }

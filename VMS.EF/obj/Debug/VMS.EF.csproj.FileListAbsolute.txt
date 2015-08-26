@@ -28,3 +28,4 @@ H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.dll
 H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.pdb
 H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.new2.resources
 H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.new_field_added_to_visitors.resources
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.addednewfieldVisitorPictovisitor.resources

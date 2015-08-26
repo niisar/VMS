@@ -22,6 +22,7 @@ namespace VMS.Api.Models
         public string InTime { get; set; }
         public string OutTime { get; set; }
         public string TokenNo { get; set; }
+        public string VisitorPic { get; set; }
         //public string Status { get; set; }
         public DateTime EntryDate { get; set; }
 
