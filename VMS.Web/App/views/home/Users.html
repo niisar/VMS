@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>VMS</title>
+    <link href="../../../Resorces/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Resorces/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Resorces/css/angular/angular-motion.css" rel="stylesheet" />
+    <link href="../../../Resorces/css/libs/nanoscroller.css" rel="stylesheet" />
+    <link href="../../../Resorces/css/libs/font-awesome.css" rel="stylesheet" />
+    <link href="../../../Resorces/css/angular.css" rel="stylesheet" />
+    <link href="../../../Resorces/css/loading-bar.css" rel="stylesheet" />
+    <link href="../../../App/frameworks/css/ngDialog.css" rel="stylesheet" />
+    <link href="../../../App/frameworks/css/ngDialog-theme-default.css" rel="stylesheet" />
+    <link href="../../../App/frameworks/css/ngDialog-custom-width.css" rel="stylesheet" />
+    <link href="../../../App/frameworks/uigrid/ui-grid.css" rel="stylesheet" />
+    <link href="../../../App/frameworks/css/angular-wizard.css" rel="stylesheet" />
+    <link href="../../../Resorces/css/compiled/theme_styles.css" rel="stylesheet" />
+    <link type="image/x-icon" href="../favicon.png" rel="shortcut icon" />
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
+
+    <link type="image/x-icon" href="favicon.png" rel="shortcut icon" />
+</head>
+<body id="login-page-full" ng-app="taskWebApp" ng-controller="home.Users">
+    <div id="login-full-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12" id="divMain" ng-include="template.url">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="login-tool" class="closed">
+        <a id="config-tool-cog" ng-click="template = templates[1]">
+            <i class="fa fa-sign-in"></i> Login
+        </a>
+
+    </div>
+
+    <script src="../../../Resorces/js/demo-skin-changer.js"></script>
+    <script src="../../../Resorces/js/jquery.js"></script>
+    <script src="../../../Resorces/js/bootstrap.js"></script>
+    <script src="../../../Resorces/js/jquery.nanoscroller.min.js"></script>
+    <script src="../../../Resorces/js/demo.js"></script>
+    <script src="../../../Resorces/js/scripts.js"></script>
+    <script src="../../../Resorces/js/lodash.js"></script>
+
+
+    <script src="../../../App/frameworks/angular.min.js"></script>
+    <script src="../../../App/frameworks/angular-route.min.js"></script>
+    <script src="../../../App/frameworks/angular-animate.js"></script>
+    <script src="../../../App/frameworks/loading-bar.js"></script>
+    <script src="../../../App/frameworks/angular-strap.js"></script>
+    <script src="../../../App/frameworks/angular-strap.tpl.js"></script>
+    <script src="../../../App/frameworks/angular-resource.js"></script>
+    <script src="../../../App/frameworks/ngDialog.js"></script>
+
+    <script src="../../../App/frameworks/angular-local-storage.min.js"></script>
+    <script src="../../../App/frameworks/uigrid/ui-grid.js"></script>
+    <script src="../../../App/frameworks/angular-wizard.js"></script>
+    <script src="../../../App/modules/app.js"></script>
+    <script src="../../../App/configs/config.js"></script>
+
+    <script src="../../../App/services/ngCrud.js"></script>
+    <script src="../../../App/services/myResource.js"></script>
+    <script src="../../../App/services/authInterceptorService.js"></script>
+    <script src="../../../App/services/authService.js"></script>
+
+    <script src="../../../App/directives/directives.js"></script>
+
+    <script src="../../../App/controllers/mainCtrl.js"></script>
+
+    <script src="../../../App/controllers/home/Users.js"></script>
+    <script src="../../controllers/camera/capture.js"></script>
+    <style>
+        #login-logo > img {
+            height: 100px;
+        }
+
+        #login-logo {
+            padding: 15px 0;
+        }
+
+        #login-tool {
+            background-color: #fff;
+            position: fixed;
+            right: 0;
+            top: 20px;
+            width: 100px;
+            z-index: 1000;
+            padding: 5px 5px 5px 25px;
+            border-radius: 5px 0 0 5px;
+        }
+
+            #login-tool #login-tool-cog {
+                background: #fff;
+                border-radius: 3px 0 0 3px;
+                background-clip: padding-box;
+                box-shadow: -3px 3px 3px -2px rgba(0,0,0,0.1);
+                cursor: pointer;
+                left: -50px;
+                padding: 10px;
+                position: absolute;
+                text-align: center;
+                width: 50px;
+                transition: all 0.1s ease-in-out 0s;
+                top: 0;
+            }
+
+
+
+            #login-tool.closed #login-tool-cog:hover {
+                background-color: #03a9f4;
+                color: #fff;
+            }
+
+            #login-tool #login-tool-cog i {
+                font-size: 2.2em;
+            }
+
+    
+    </style>
+</body>
+
+</html>

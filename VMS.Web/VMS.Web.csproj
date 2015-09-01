@@ -73,12 +73,27 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\controllers\admin\employee.js" />
+    <Content Include="App\controllers\admin\meeting.js" />
+    <Content Include="App\controllers\admin\parking.js" />
     <Content Include="App\controllers\camera\capture.js" />
+    <Content Include="App\controllers\home\Users.js" />
     <Content Include="App\frameworks\uigrid\ui-grid.eot" />
     <Content Include="App\frameworks\uigrid\ui-grid.ttf" />
     <Content Include="App\frameworks\uigrid\ui-grid.woff" />
+    <Content Include="App\views\Admin\EmployeeImport.html" />
+    <Content Include="App\views\Admin\MeetingDesk.html" />
+    <Content Include="App\views\Admin\EmployeeDesk.html" />
+    <Content Include="App\views\Admin\MeetingAdd.html" />
+    <Content Include="App\views\Admin\MeetingList.html" />
+    <Content Include="App\views\Admin\ParkingList.html" />
+    <Content Include="App\views\Admin\ParkingAdd.html" />
+    <Content Include="App\views\Admin\ParkingDesk.html" />
     <Content Include="App\views\camera\capture.html" />
     <Content Include="App\views\camera\test.html" />
+    <Content Include="App\views\home\LandingPage.html" />
+    <Content Include="App\views\home\NewUser.html" />
+    <Content Include="App\views\home\Users.html" />
     <Content Include="Global.asax" />
     <Content Include="Resorces\fonts\fontawesome-webfont.eot" />
     <Content Include="Resorces\fonts\fontawesome-webfont.ttf" />

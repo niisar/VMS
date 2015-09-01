@@ -3,6 +3,8 @@ app.controller('mainCtrl',
         $scope.OperType = 0;
         $scope.userId = "df9aaf79-d365-4119-8b26-2ae9ceca4e71";
         $('#page-wrapper').removeClass('nav-small');
+
+
     }
 );
 

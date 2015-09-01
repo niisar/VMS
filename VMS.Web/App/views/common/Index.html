@@ -19,7 +19,6 @@
     <link href="../../../App/frameworks/css/angular-wizard.css" rel="stylesheet" />
     <link href="../../../Resorces/css/compiled/theme_styles.css" rel="stylesheet" />
     <link type="image/x-icon" href="../favicon.png" rel="shortcut icon" />
-
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
             <script src="js/html5shiv.js"></script>
@@ -292,16 +291,26 @@
                                         </ul>
                                     </li>
 
-                                    <li data-match-route="/camera*">
+                                    <li data-match-route="/admin*">
                                         <a href="" class="dropdown-toggle">
-                                            <i class="fa fa-users"></i>
-                                            <span>Camera</span>
+                                            <i class="fa fa-cogs"></i>
+                                            <span>Admin Section</span>
                                             <i class="fa fa-angle-right drop-icon"></i>
                                         </a>
                                         <ul class="submenu">
-                                            <li data-match-route="/camera/capture">
-                                                <a href="#/camera/capture">
-                                                    My Desk
+                                            <li data-match-route="/admin/EmployeeDesk">
+                                                <a href="#/admin/EmployeeDesk">
+                                                    Upload Employee Master
+                                                </a>
+                                            </li>
+                                            <li data-match-route="/admin/ParkingDesk">
+                                                <a href="#/admin/ParkingDesk">
+                                                    Parking Master
+                                                </a>
+                                            </li>
+                                            <li data-match-route="/admin/MeetingDesk">
+                                                <a href="#/admin/MeetingDesk">
+                                                    Meeting Management
                                                 </a>
                                             </li>
                                         </ul>
@@ -363,5 +372,10 @@
     <script src="../../../App/controllers/security/security.js"></script>
     <script src="../../../App/controllers/lobby/lobby.js"></script>
     <script src="../../controllers/camera/capture.js"></script>
+
+    <script src="../../controllers/admin/parking.js"></script>
+    <script src="../../controllers/admin/employee.js"></script>
+    <script src="../../controllers/admin/meeting.js"></script>
+
 </body>
 </html>

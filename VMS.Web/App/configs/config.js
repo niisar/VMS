@@ -30,12 +30,25 @@ app.config(['$routeProvider', function ($routeProvider, $locationProvider) {
         title: 'My Desk'
     });
 
-    $routeProvider.when("/camera/capture", {
-        templateUrl: "/app/views/camera/capture.html",
-        controller: "camera.capture",
-        title: 'Capture'
-    });
     
+    $routeProvider.when("/admin/ParkingDesk", {
+        templateUrl: "/app/views/admin/ParkingDesk.html",
+        controller: "admin.parking",
+        title: 'Parking Master'
+    });
+
+    $routeProvider.when("/admin/EmployeeDesk", {
+        templateUrl: "/app/views/admin/EmployeeDesk.html",
+        controller: "admin.employee",
+        title: 'Employee Master'
+    });
+    $routeProvider.when("/admin/MeetingDesk", {
+        templateUrl: "/app/views/admin/MeetingDesk.html",
+        controller: "admin.meeting",
+        title: 'Meeting Master'
+    });
+
+
 
     $routeProvider.when("/common/error_404", {
         templateUrl: "/app/views/common/Error_404.html",

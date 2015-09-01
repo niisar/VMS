@@ -1,0 +1,35 @@
+﻿<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="inputEmail1" class="col-lg-2 control-label">Slot</label>
+        <div class="col-lg-8">
+            <input type="email" class="form-control" id="inputEmail1" placeholder="Parking Slot" value="">
+        </div>
+    </div>
+   
+    <div class="form-group">
+        <label for="inputEmail1" class="col-lg-2 control-label">Size</label>
+        <div class="col-lg-8">
+            <input type="email" class="form-control" id="inputEmail1" placeholder="Size">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword1" class="col-lg-2 control-label">Assigned To</label>
+        <div class="col-lg-8">
+            <select class="form-control" ng-model="VisitorDetails.Building">
+                <option>--Select--</option>
+                <option>All</option>
+                <option>TCS</option>
+                <option>Wipro</option>
+                <option>IBM</option>
+                <option>Accenture</option>
+                <option>PWC</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <button type="button" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+</form>
