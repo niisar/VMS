@@ -10,25 +10,72 @@ app.controller('security.security',
             //$location.path('/common/Registration');
         }
 
+        $scope.CheckedIn = {
+            enableFiltering: true,
+            onRegisterApi: function (gridApi) {
+                console.log(gridApi);
+                $scope.gridApi = gridApi;
+                $scope.gridApi.grid.registerRowsProcessor($scope.singleFilter, 200);
+            },
+            columnDefs: [
+                  { field: 'Name'},
+                  { field: 'Vehicle' },
+                  { field: 'Building' },
+                  { field: 'MeeTTo', displayName: 'Meet To' },
+                  { field: 'InTime',  displayName: 'In Time' },
+                  { field: 'TokenNo',  displayName: 'Token' },
+                  //{
+                  //    field: 'ID',
+                  //    displayName: 'Action',
+                  //    cellTemplate: '<button ng-click="Checkout(1)" class="btn btn-primary label">Checkout </button> '
+                  //}
+            ]
+        };
 
-        $scope.CheckedIn = {};
-        $scope.CheckedIn.columnDefs = [
-          { name: 'Name' },
-          { name: 'Vehicle' },
-          { name: 'Building' },
-          { name: 'MeeTTo', displayName: 'Meet To' },
-          { name: 'InTime', displayName: 'In Time' },
-          { name: 'TokenNo', displayName: 'Token' },
-          {
-              field:'ID',
-              displayName: 'Action',
-              cellTemplate: '<button ng-click="Checkout(1)" class="btn btn-primary label">Checkout </button> '
-          }
-        ];
-
-        $http.get(Settings.apiServiceBaseUri + 'api/SecurityCheckin/SecurityChekedInVisitor').then(function (results) {
-            $scope.CheckedIn.data = results.data;
+        $http.get(Settings.apiServiceBaseUri + 'api/SecurityCheckin/SecurityChekedInVisitor').success(function (data) {
+            $scope.CheckedIn.data = data;
         });
+        $scope.filter = function (keyEvent) {
+            if (keyEvent.which === 13) {
+                $scope.gridApi.grid.refresh();
+            }
+        };
+        $scope.singleFilter = function (renderableRows) {
+            var matcher = new RegExp($scope.filterValue);
+            renderableRows.forEach(function (row) {
+                //var match = false;
+                //['Name'].forEach(function (field) {
+                //    //if (row.entity[field].match(matcher)) {
+                //    //    //console.log(row.entity[field] + "<->" + matcher);
+                //    //        match = true;
+                //    //}
+                //});
+                
+                //if (!match) {
+                    
+                //       // row.visible = false;
+                //}
+                console.log(row.visible);
+               
+                
+            });
+            return renderableRows;
+        };
+
+        //$scope.CheckedIn.columnDefs = [
+        //  { name: 'Name' },
+        //  { name: 'Vehicle' },
+        //  { name: 'Building' },
+        //  { name: 'MeeTTo', displayName: 'Meet To' },
+        //  { name: 'InTime', displayName: 'In Time' },
+        //  { name: 'TokenNo', displayName: 'Token' },
+        //  {
+        //      field: 'ID',
+        //      displayName: 'Action',
+        //      cellTemplate: '<button ng-click="Checkout(1)" class="btn btn-primary label">Checkout </button> '
+        //  }
+        //];
+
 
         $scope.AllVisitors = {};
         $scope.AllVisitors.columnDefs = [

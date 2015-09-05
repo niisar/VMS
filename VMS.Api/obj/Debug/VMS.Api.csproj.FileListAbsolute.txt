@@ -44,3 +44,10 @@ H:\personal\VMS\VMS.Api\bin\System.Web.Http.WebHost.xml
 H:\personal\VMS\VMS.Api\obj\Debug\VMS.Api.csprojResolveAssemblyReference.cache
 H:\personal\VMS\VMS.Api\obj\Debug\VMS.Api.dll
 H:\personal\VMS\VMS.Api\obj\Debug\VMS.Api.pdb
+H:\personal\VMS\VMS.Api\bin\LinqToExcel.dll
+H:\personal\VMS\VMS.Api\bin\log4net.dll
+H:\personal\VMS\VMS.Api\bin\Remotion.Data.Linq.dll
+H:\personal\VMS\VMS.Api\bin\Remotion.dll
+H:\personal\VMS\VMS.Api\bin\Remotion.Interfaces.dll
+H:\personal\VMS\VMS.Api\bin\LinqToExcel.xml
+H:\personal\VMS\VMS.Api\bin\log4net.xml

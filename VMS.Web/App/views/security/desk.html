@@ -13,7 +13,7 @@
                 <h2 class="pull-left">{{template.name}}</h2>
                 <div class="filter-block pull-right">
                     <div class="form-group pull-left">
-                        <input type="text"  class="form-control" placeholder="Search...">
+                        <input type="text" class="form-control" ng-keypress="filter($event)" ng-model='filterValue' placeholder="Search...">
                         <i class="fa fa-search search-icon"></i>
                     </div>
 

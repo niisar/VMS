@@ -1,0 +1,53 @@
+﻿<div id="login-box">
+    <div id="login-box-holder">
+        <div class="row">
+            <div class="col-xs-12">
+                <header id="login-header">
+                    <div id="login-logo">
+                        <img src="../../../Resorces/img/logo-small.png" alt="" />
+                    </div>
+                </header>
+                <div id="login-box-inner" style="padding-top:20px;" ng-cloak>
+                        <form role="form" >
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input class="form-control" type="text" placeholder="Email address">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div id="remember-me-wrapper">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="checkbox-nice">
+                                            <input type="checkbox" id="remember-me" checked="checked">
+                                            <label for="remember-me">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <a href="forgot-password-full.html" id="login-forget-link" class="col-xs-6">
+                                        Forgot password?
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <button type="button" ng-click="go('/App/views/common/Index.html')" class="btn btn-success col-xs-12">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+<style>
+    #login-box {
+        
+        min-width: 280px;
+        margin: 110px auto 20px;
+    }
+</style>

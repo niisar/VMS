@@ -2,7 +2,7 @@
     <div class="form-group">
         <label for="inputEmail1" class="col-lg-2 control-label">Import Sheet</label>
         <div class="col-lg-8">
-            <input type="file" class="form-control" id="inputEmail1" value="Import Sheet">
+            <input type="file" ng-file-select="onFileSelect($files)" multiple>
         </div>
     </div>
     <div id="grid1" ui-grid="empList" class="grid"></div>

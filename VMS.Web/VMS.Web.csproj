@@ -78,6 +78,7 @@
     <Content Include="App\controllers\admin\parking.js" />
     <Content Include="App\controllers\camera\capture.js" />
     <Content Include="App\controllers\home\Users.js" />
+    <Content Include="App\frameworks\angular-file-upload.js" />
     <Content Include="App\frameworks\uigrid\ui-grid.eot" />
     <Content Include="App\frameworks\uigrid\ui-grid.ttf" />
     <Content Include="App\frameworks\uigrid\ui-grid.woff" />
@@ -93,6 +94,7 @@
     <Content Include="App\views\camera\test.html" />
     <Content Include="App\views\home\LandingPage.html" />
     <Content Include="App\views\home\NewUser.html" />
+    <Content Include="App\views\home\Login.html" />
     <Content Include="App\views\home\Users.html" />
     <Content Include="Global.asax" />
     <Content Include="Resorces\fonts\fontawesome-webfont.eot" />
