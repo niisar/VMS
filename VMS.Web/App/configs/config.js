@@ -81,7 +81,15 @@ app.config(function ($httpProvider) {
     //delete $httpProvider.defaults.headers.post['Content-type'];
 });
 
-
+app.config(function(toastrConfig) {
+    angular.extend(toastrConfig, {
+        allowHtml: true,
+        progressBar: false,
+        timeOut: 5000,
+        titleClass: 'toast-title',
+        toastClass: 'toast'
+    });
+});
 var serviceBase = "http://localhost:57749/";
 app.constant(['ngAuthSettings', function (authService) {
     apiServiceBaseUri: serviceBase

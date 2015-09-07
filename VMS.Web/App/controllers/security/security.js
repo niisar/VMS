@@ -1,5 +1,5 @@
 app.controller('security.security',
-    function ($scope, $modal, Settings, $animate, ngCrud, $http, ngDialog, myResource, $timeout, WizardHandler) {
+    function ($scope, $modal, Settings, $animate, ngCrud, $http, ngDialog, myResource, $timeout, WizardHandler, toastr) {
         $scope.templates =
             [{ name: 'Visitors', url: '/app/views/security/list.html' },
              { name: 'New Visitor', url: '/app/views/security/add.html' }];
@@ -68,6 +68,7 @@ app.controller('security.security',
         //    mm = '0' + mm
         //}
         $scope.VisitorDetails = {};
+        $scope.VisitorDetails.SmsNo = "9939673732";
         $scope.resetForm = function () {
             $scope.VisitorDetails.Name = "";
             $scope.VisitorDetails.Guests = "";
@@ -81,21 +82,27 @@ app.controller('security.security',
             $scope.VisitorDetails.Building = "";
             $scope.VisitorDetails.MeeTTo = "";
             $scope.VisitorDetails.InTime = "";
+            $scope.VisitorDetails.SmsNo = "";
             //$scope.VisitorDetails.Status = "";
         }
         $scope.finishedWizard = function () {
-            $http.post(Settings.apiServiceBaseUri + 'api/Visitors/Post', this.VisitorDetails).then(function (results) {
-                $scope.resetForm();
-                WizardHandler.wizard().goTo(0);
-            });
-            //$http.get(Settings.apiServiceBaseUri + 'api/Visitors/Get').then(function (results) {
-
+            //$http.post(Settings.apiServiceBaseUri + 'api/Visitors/Post', this.VisitorDetails).then(function (results) {
+            //    $scope.resetForm();
+            //    WizardHandler.wizard().goTo(0);
             //});
+            
+       
+
+            //ngDialog.open({
+            //    template: '/App/views/tpl/smsSent.html',
+            //    scope: $scope
+            //});
+            toastr.success('SMS sent succesfully to <strong>' + $scope.VisitorDetails.MeeTTo + '</strong> at <strong>' + $scope.VisitorDetails.SmsNo + '</strong>', 'SMS Sent');
         }
 
 
 
-
+        
 
 
     }

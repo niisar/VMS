@@ -49,29 +49,9 @@
     <Compile Include="Entitities\Employees.cs" />
     <Compile Include="Entitities\InOuts.cs" />
     <Compile Include="Entitities\Visitors.cs" />
-    <Compile Include="Migrations\201506240833282_initial.cs" />
-    <Compile Include="Migrations\201506240833282_initial.Designer.cs">
-      <DependentUpon>201506240833282_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201506260913484_changedDatatype.cs" />
-    <Compile Include="Migrations\201506260913484_changedDatatype.Designer.cs">
-      <DependentUpon>201506260913484_changedDatatype.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201506300634583_newtable.cs" />
-    <Compile Include="Migrations\201506300634583_newtable.Designer.cs">
-      <DependentUpon>201506300634583_newtable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201507201036506_new2.cs" />
-    <Compile Include="Migrations\201507201036506_new2.Designer.cs">
-      <DependentUpon>201507201036506_new2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508241118455_new_field_added_to_visitors.cs" />
-    <Compile Include="Migrations\201508241118455_new_field_added_to_visitors.Designer.cs">
-      <DependentUpon>201508241118455_new_field_added_to_visitors.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201508260655583_added new field VisitorPic to visitor.cs" />
-    <Compile Include="Migrations\201508260655583_added new field VisitorPic to visitor.Designer.cs">
-      <DependentUpon>201508260655583_added new field VisitorPic to visitor.cs</DependentUpon>
+    <Compile Include="Migrations\201509050326055_initial.cs" />
+    <Compile Include="Migrations\201509050326055_initial.Designer.cs">
+      <DependentUpon>201509050326055_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,23 +62,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201506240833282_initial.resx">
-      <DependentUpon>201506240833282_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201506260913484_changedDatatype.resx">
-      <DependentUpon>201506260913484_changedDatatype.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201506300634583_newtable.resx">
-      <DependentUpon>201506300634583_newtable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201507201036506_new2.resx">
-      <DependentUpon>201507201036506_new2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508241118455_new_field_added_to_visitors.resx">
-      <DependentUpon>201508241118455_new_field_added_to_visitors.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201508260655583_added new field VisitorPic to visitor.resx">
-      <DependentUpon>201508260655583_added new field VisitorPic to visitor.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201509050326055_initial.resx">
+      <DependentUpon>201509050326055_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

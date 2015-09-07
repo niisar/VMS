@@ -20,12 +20,7 @@ H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.SqlServer.dll
 H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.xml
 H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.SqlServer.xml
 H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.csprojResolveAssemblyReference.cache
-H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.initial.resources
-H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.changedDatatype.resources
-H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.newtable.resources
-H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.csproj.GenerateResource.Cache
 H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.dll
 H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.pdb
-H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.new2.resources
-H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.new_field_added_to_visitors.resources
-H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.addednewfieldVisitorPictovisitor.resources
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.initial.resources
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.csproj.GenerateResource.Cache

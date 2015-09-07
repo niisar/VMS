@@ -89,6 +89,13 @@
     <Content Include="App\frameworks\aggrid\theme-fresh.css" />
     <Content Include="App\frameworks\aggrid\theme-fresh.min.css" />
     <Content Include="App\frameworks\angular-file-upload.js" />
+    <Content Include="App\frameworks\angular-sanitize.js" />
+    <Content Include="App\frameworks\ngToast\angular-toastr.css" />
+    <Content Include="App\frameworks\ngToast\angular-toastr.js" />
+    <Content Include="App\frameworks\ngToast\angular-toastr.min.css" />
+    <Content Include="App\frameworks\ngToast\angular-toastr.min.js" />
+    <Content Include="App\frameworks\ngToast\angular-toastr.tpls.js" />
+    <Content Include="App\frameworks\ngToast\angular-toastr.tpls.min.js" />
     <Content Include="App\frameworks\uigrid\ui-grid.eot" />
     <Content Include="App\frameworks\uigrid\ui-grid.ttf" />
     <Content Include="App\frameworks\uigrid\ui-grid.woff" />
@@ -106,6 +113,7 @@
     <Content Include="App\views\home\NewUser.html" />
     <Content Include="App\views\home\Login.html" />
     <Content Include="App\views\home\Users.html" />
+    <Content Include="App\views\tpl\smsSent.html" />
     <Content Include="Global.asax" />
     <Content Include="Resorces\fonts\fontawesome-webfont.eot" />
     <Content Include="Resorces\fonts\fontawesome-webfont.ttf" />
