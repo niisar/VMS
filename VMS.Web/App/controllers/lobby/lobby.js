@@ -4,7 +4,9 @@ app.controller('lobby.lobby',
             [{ name: 'TCS', url: '/app/views/security/list.html' },
              { name: 'New Visitor', url: '/app/views/security/add.html' }];
         $scope.template = $scope.templates[0];
-        $scope.CheckedIn = {};
+        $scope.CheckedIn = {
+
+        };
 
         $scope.CheckedIn.columnDefs = [
           { name: 'Name' },

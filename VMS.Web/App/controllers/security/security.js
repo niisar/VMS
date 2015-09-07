@@ -33,26 +33,27 @@ app.controller('security.security',
 
         
 
-        $scope.AllVisitors = {};
-        $scope.AllVisitors.columnDefs = [
-          { name: 'Name' },
-          { name: 'Vehicle' },
-          { name: 'Building' },
-          { name: 'MeeTTo', displayName: 'Meet To' },
-          { name: 'InTime' },
-          { name: 'OutTime' },
-        ];
+        $scope.AllVisitors = {
+            columnDefs: [
+               { field: 'Name', headerName: 'Name', width: 240 },
+               { field: 'Vehicle', headerName: 'Vehicle', width: 200 },
+               { field: 'Building', headerName: 'Building', width: 120 },
+               { field: 'MeeTTo', headerName: 'Meet To', width: 240 },
+               { field: 'InTime', headerName: 'In Time', width: 120 },
+               { field: 'OutTime', headerName: 'Out Time', width: 120 },
+            ],
+        };
 
-        $http.get(Settings.apiServiceBaseUri + 'api/SecurityCheckin/SecurityAllVisitor').then(function (results) {
-            $scope.AllVisitors.data = results.data;
+        $http.get(Settings.apiServiceBaseUri + 'api/SecurityCheckin/SecurityAllVisitor').success(function (data) {
+            $scope.AllVisitors.rowData = data;
         });
-
+        
+        
 
 
         $scope.tabs = [
             { title: '0', name: 'Checked In', template: '/app/views/security/CheckedIn.html', content: "Empty Data" },
-          { title: '1', name: 'All Visitors', template: '/app/views/security/AllVisitors.html', content: "Empty Data" },
-
+            { title: '1', name: 'All Visitors', template: '/app/views/security/AllVisitors.html', content: "Empty Data" },
         ];
 
         // get formated date in js 
