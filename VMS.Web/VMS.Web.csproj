@@ -99,6 +99,7 @@
     <Content Include="App\frameworks\uigrid\ui-grid.eot" />
     <Content Include="App\frameworks\uigrid\ui-grid.ttf" />
     <Content Include="App\frameworks\uigrid\ui-grid.woff" />
+    <Content Include="App\services\mySharedService.js" />
     <Content Include="App\views\Admin\EmployeeImport.html" />
     <Content Include="App\views\Admin\MeetingDesk.html" />
     <Content Include="App\views\Admin\EmployeeDesk.html" />

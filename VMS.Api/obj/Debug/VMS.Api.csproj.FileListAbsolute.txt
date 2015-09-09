@@ -26,7 +26,12 @@ H:\personal\VMS\VMS.Api\bin\VMS.Api.dll
 H:\personal\VMS\VMS.Api\bin\VMS.Api.pdb
 H:\personal\VMS\VMS.Api\bin\EntityFramework.dll
 H:\personal\VMS\VMS.Api\bin\EntityFramework.SqlServer.dll
+H:\personal\VMS\VMS.Api\bin\LinqToExcel.dll
+H:\personal\VMS\VMS.Api\bin\log4net.dll
 H:\personal\VMS\VMS.Api\bin\Newtonsoft.Json.dll
+H:\personal\VMS\VMS.Api\bin\Remotion.Data.Linq.dll
+H:\personal\VMS\VMS.Api\bin\Remotion.dll
+H:\personal\VMS\VMS.Api\bin\Remotion.Interfaces.dll
 H:\personal\VMS\VMS.Api\bin\System.Net.Http.Formatting.dll
 H:\personal\VMS\VMS.Api\bin\System.Web.Cors.dll
 H:\personal\VMS\VMS.Api\bin\System.Web.Http.Cors.dll
@@ -36,6 +41,8 @@ H:\personal\VMS\VMS.Api\bin\VMS.EF.dll
 H:\personal\VMS\VMS.Api\bin\VMS.EF.pdb
 H:\personal\VMS\VMS.Api\bin\EntityFramework.xml
 H:\personal\VMS\VMS.Api\bin\EntityFramework.SqlServer.xml
+H:\personal\VMS\VMS.Api\bin\LinqToExcel.xml
+H:\personal\VMS\VMS.Api\bin\log4net.xml
 H:\personal\VMS\VMS.Api\bin\System.Net.Http.Formatting.xml
 H:\personal\VMS\VMS.Api\bin\System.Web.Http.xml
 H:\personal\VMS\VMS.Api\bin\System.Web.Http.Cors.xml
@@ -44,10 +51,3 @@ H:\personal\VMS\VMS.Api\bin\System.Web.Http.WebHost.xml
 H:\personal\VMS\VMS.Api\obj\Debug\VMS.Api.csprojResolveAssemblyReference.cache
 H:\personal\VMS\VMS.Api\obj\Debug\VMS.Api.dll
 H:\personal\VMS\VMS.Api\obj\Debug\VMS.Api.pdb
-H:\personal\VMS\VMS.Api\bin\LinqToExcel.dll
-H:\personal\VMS\VMS.Api\bin\log4net.dll
-H:\personal\VMS\VMS.Api\bin\Remotion.Data.Linq.dll
-H:\personal\VMS\VMS.Api\bin\Remotion.dll
-H:\personal\VMS\VMS.Api\bin\Remotion.Interfaces.dll
-H:\personal\VMS\VMS.Api\bin\LinqToExcel.xml
-H:\personal\VMS\VMS.Api\bin\log4net.xml

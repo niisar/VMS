@@ -1,9 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Formatting;
+using System.Threading.Tasks;
+using System.Web;
 using System.Web.Hosting;
 using System.Web.Http;
 using System.Web.Http.Cors;
@@ -19,7 +23,7 @@ namespace VMS.Api.Controllers
         {
             byte[] photo = Convert.FromBase64String(data.Value);
             var dir = new DirectoryInfo(HostingEnvironment.ApplicationPhysicalPath);
-            using (System.IO.FileStream fs = System.IO.File.Create(Path.Combine(dir.FullName, string.Format("Img_{0}.png", Guid.NewGuid()))))
+            using (System.IO.FileStream fs = System.IO.File.Create(Path.Combine(dir.FullName+"/Capture_IMG", string.Format("Img_{0}.png", Guid.NewGuid()))))
             {
                 fs.Write(photo, 0, photo.Length);
             }

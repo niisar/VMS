@@ -5,54 +5,60 @@ app.controller('lobby.lobby',
              { name: 'New Visitor', url: '/app/views/security/add.html' }];
         $scope.template = $scope.templates[0];
         $scope.CheckedIn = {
-
+            columnDefs: [
+                  { field: 'Name', headerName: 'Name' },
+                  { field: 'Building', headerName: 'Building' },
+                  { field: 'MeeTTo', headerName: 'Meet To' },
+                  { field: 'InTime', headerName: 'In Time' },
+                  { field: 'TokenNo', headerName: 'Token' },
+                  {
+                      field: 'Action',
+                      headerName: 'Action',
+                      template: '<button class="btn btn-primary label ">CheckIn</button>&nbsp;<button class="btn btn-primary label" readonly="readonly">Checkout</button>'
+                  }
+            ],
         };
 
-        $scope.CheckedIn.columnDefs = [
-          { name: 'Name' },
-          { name: 'Building' },
-          { name: 'MeeTTo', displayName: 'Meet To' },
-          { name: 'InTime', displayName: 'In Time' },
-          { name: 'TokenNo', displayName: 'Token' },
-          {
-              name: 'Action',
-              cellTemplate: '<button class="btn btn-primary label ">CheckIn</button>&nbsp;<button class="btn btn-primary label" readonly="readonly">Checkout</button>'
-          }
-        ];
-        $http.get(Settings.apiServiceBaseUri + 'api/LobbyCheckin/Checkedin?building=TCS').then(function (results) {
-            $scope.CheckedIn.data = results.data;
+
+        $http.get(Settings.apiServiceBaseUri + 'api/LobbyCheckin/Checkedin?building=TCS').success(function (data) {
+            $scope.CheckedIn.rowData = data;
         });
 
-        $scope.AllVisitors = {};
-        $scope.AllVisitors.columnDefs = [
-            { name: 'Name' },
-            { name: 'Vehicle' },
-            { name: 'Building' },
-            { name: 'MeeTTo', displayName: 'Meet To' },
-            { name: 'InTime', displayName: 'In Time' },
-            { name: 'OutTime' },
-            { name: 'TokenNo', displayName: 'Token' },
-            { name: 'EntryDate', displayName: 'Date', width: 100 },
 
-            
-            { name: 'Status', displayName: 'Status' },
-        ];
-        $http.get(Settings.apiServiceBaseUri + 'api/LobbyCheckin/AllVisitors').then(function (results) {
-            $scope.AllVisitors.data = results.data;
+
+        $scope.AllVisitors = {
+            columnDefs : [
+            { field: 'Name' ,headerName:'Name'},
+            { field: 'Vehicle',headerName:'Vehicle' },
+            { field: 'Building',headerName:'Building' },
+            { field: 'MeeTTo', headerName: 'Meet To' },
+            { field: 'InTime', headerName: 'In Time' },
+            { field: 'OutTime', headerName :'Out Time'},
+            { field: 'TokenNo', headerName: 'Token' },
+            { field: 'EntryDate', headerName: 'Date', width: 100 },
+
+
+            { field: 'Status', displayName: 'Status' },
+            ],
+        };
+        $http.get(Settings.apiServiceBaseUri + 'api/LobbyCheckin/AllVisitors').success(function (data) {
+            $scope.AllVisitors.rowData = data;
         })
 
-        $scope.MyVisitors = {};
-        $scope.MyVisitors.columnDefs = [
-            { name: 'Name' },
-            { name: 'Vehicle' },
-            { name: 'Building' },
-            { name: 'MeeTTo', displayName: 'Meet To' },
-            { name: 'InTime', displayName: 'In Time' },
-            { name: 'OutTime' },
-            { name: 'TokenNo', displayName: 'Token' },
-        ];
-        $http.get(Settings.apiServiceBaseUri + 'api/LobbyCheckin/MyVisitors?building=TCS').then(function (results) {
-            $scope.MyVisitors.data = results.data;
+        $scope.MyVisitors = {
+            columnDefs : [
+             { field: 'Name', headerName: 'Name' },
+            { field: 'Vehicle', headerName: 'Vehicle' },
+            { field: 'Building', headerName: 'Building' },
+            { field: 'MeeTTo', displayName: 'Meet To' },
+            { field: 'InTime', displayName: 'In Time' },
+            { field: 'OutTime', headerName: 'Out Time' },
+            { field: 'TokenNo', displayName: 'Token' },
+            ],
+        };
+        
+        $http.get(Settings.apiServiceBaseUri + 'api/LobbyCheckin/MyVisitors?building=TCS').success(function (data) {
+            $scope.MyVisitors.rowData = data;
         })
 
 

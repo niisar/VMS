@@ -13,7 +13,9 @@
                 <h2 class="pull-left">{{template.name}}</h2>
                 <div class="filter-block pull-right">
                     <div class="form-group pull-left">
-                        <input type="text"  class="form-control" placeholder="Search...">
+                        <input type="text" class="form-control ng-cloak" ng-lazy-show="tabs.activeTab == 0" ng-model="CheckedIn.quickFilterText" placeholder="Search...">
+                        <input type="text" class="form-control ng-cloak" ng-lazy-show="tabs.activeTab == 1" ng-model="MyVisitors.quickFilterText" placeholder="Search...">
+                        <input type="text" class="form-control ng-cloak" ng-lazy-show="tabs.activeTab == 2" ng-model="AllVisitors.quickFilterText" placeholder="Search...">
                         <i class="fa fa-search search-icon"></i>
                     </div>
 

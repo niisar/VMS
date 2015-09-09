@@ -33,7 +33,8 @@ namespace VMS.Api.Controllers
                                rt.MeeTTo,
                                inout.InTime,
                                inout.OutTime,
-                               inout.ID
+                               inout.ID,
+                               inout.Status
                            };
                 return Ok(task.ToList());
             }
@@ -44,13 +45,41 @@ namespace VMS.Api.Controllers
         {
             using (var db = new vmsDBContext())
             {
-                var task = (from inout in db.InOuts
-                           where inout.ID == id
-                           select inout).SingleOrDefault();
-                task.Status = "Security Checkout";
+                InOuts inout = new InOuts();
+                inout.VisitorID = id;
+                inout.InTime = GetCheckInTime(id);
+                inout.OutTime = string.Format("{0:HH:mm tt}", DateTime.Now);
+                inout.Status = "Security Checkout";
+                inout.EntryDate = DateTime.Now;
+                
+                db.InOuts.Add(inout);
                 db.SaveChanges();
-                return Ok("OK");
+               
             }
+            using (var db = new vmsDBContext())
+            {
+                var inouts = (from inout in db.InOuts
+                             where inout.VisitorID.Equals(id)
+                             && inout.Status.Equals("Security Checkin")
+                             select inout).SingleOrDefault();
+                inouts.OutTime = string.Format("{0:HH:mm tt}", DateTime.Now);
+                db.SaveChanges();
+            }
+            return Ok("OK");
+        }
+
+        protected string GetCheckInTime(int id)
+        {
+            string strCheckInTime ="";
+            using(var db = new vmsDBContext())
+            {
+                var CheckInTime = (from inout in db.InOuts
+                                   where inout.VisitorID.Equals(id)
+                                   && inout.Status.Equals("Security Checkin")
+                                   select inout).SingleOrDefault();
+                strCheckInTime = CheckInTime.InTime;
+            }
+            return strCheckInTime;
         }
 
 
@@ -60,7 +89,8 @@ namespace VMS.Api.Controllers
             using (var db = new vmsDBContext())
             {
                 var task = from inout in db.InOuts
-                           where inout.Status == "Security Checkin" && inout.Status != "Security Checkout"
+                           where inout.Status == "Security Checkin" 
+                           && (inout.OutTime.Equals(null) || inout.OutTime.Equals(string.Empty))
                            join vst in db.Visitors on inout.VisitorID equals vst.VisitorID
                                into t
                            from rt in t.DefaultIfEmpty()
@@ -73,8 +103,9 @@ namespace VMS.Api.Controllers
                                rt.MeeTTo,
                                inout.InTime,
                                inout.OutTime,
+                               inout.Status,
                                rt.TokenNo,
-                               inout.ID
+                               rt.VisitorID
                            };
                 return Ok(task.ToList());
             }

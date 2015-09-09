@@ -133,7 +133,11 @@
 }
 .ag-fresh .ag-selection-checkbox {
   margin-left: 4px;
+  margin-right: 4px;
 }
+
+
+
 .ag-fresh .ag-paging-panel {
   padding: 4px;
 }

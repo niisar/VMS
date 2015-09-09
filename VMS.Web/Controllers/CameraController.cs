@@ -17,11 +17,13 @@ namespace VMS.WEB.Controllers
         {
             byte[] photo = Convert.FromBase64String(data.Value);
             var dir = new DirectoryInfo(HostingEnvironment.ApplicationPhysicalPath);
-            using (System.IO.FileStream fs = System.IO.File.Create(Path.Combine(dir.FullName, string.Format("Img_{0}.png", Guid.NewGuid()))))
+            string path = "";
+            using (System.IO.FileStream fs = System.IO.File.Create(Path.Combine(dir.FullName+"/Capture_IMG", string.Format("Img_{0}.png", Guid.NewGuid()))))
             {
+                path = fs.Name;
                 fs.Write(photo, 0, photo.Length);
             }
-            return Ok();
+            return Ok(path);
         }
 
         public IHttpActionResult Get()

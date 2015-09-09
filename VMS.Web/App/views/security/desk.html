@@ -13,21 +13,11 @@
                 <h2 class="pull-left">{{template.name}}</h2>
                 <div class="filter-block pull-right">
                     <div class="form-group pull-left">
-                        <input type="text" class="form-control ng-cloak" ng-lazy-show="tabs.activeTab == 0" ng-model="CheckedIn.quickFilterText" placeholder="Search...">
-                        <input type="text" class="form-control ng-cloak" ng-lazy-show="tabs.activeTab == 1" ng-model="AllVisitors.quickFilterText" placeholder="Search...">
+                        <input type="text" class="form-control" ng-lazy-show="tabs.activeTab == 0" ng-model="CheckedIn.quickFilterText" placeholder="Search...">
+                        <input type="text" class="form-control" ng-lazy-show="tabs.activeTab == 1" ng-model="AllVisitors.quickFilterText" placeholder="Search...">
                         <i class="fa fa-search search-icon"></i>
                     </div>
-                    <style>
-                        [ng:cloak], 
-[ng-cloak], 
-[data-ng-cloak], 
-[x-ng-cloak], 
-.ng-cloak, 
-.x-ng-cloak {
-  display: none !important;
-}
-                    </style>
-                    tabs.activeTab
+                   
                     <div class="form-group pull-left">
                         <a href="" class="btn btn-primary " ng-click="template = templates[1]">
                             New Visitors
@@ -38,7 +28,7 @@
                         <a class="btn btn-link2" ng-click="template = templates[0]">
                             <i class="fa fa-th"></i>
                         </a>
-                        <a href="" class="btn btn-link2">
+                        <a href="" ng-click="GetCheckedIn()" class="btn btn-link2">
                             <i class="fa fa-file-excel-o"></i>
                         </a>
                         <a href="" class="btn btn-link2">

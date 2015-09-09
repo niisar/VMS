@@ -19,8 +19,7 @@ H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.dll
 H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.SqlServer.dll
 H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.xml
 H:\personal\VMS\VMS.EF\bin\Debug\EntityFramework.SqlServer.xml
-H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.csprojResolveAssemblyReference.cache
-H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.dll
-H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.pdb
 H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.Migrations.initial.resources
 H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.csproj.GenerateResource.Cache
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.dll
+H:\personal\VMS\VMS.EF\obj\Debug\VMS.EF.pdb
